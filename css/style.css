@@ -11,6 +11,13 @@ body {
 
 }
 
+#button {
+	height: 40px;
+	width: 120px;
+	clear: both;
+	border: 1px dashed #FFFFFF;
+}
+
 #container {
 	margin: auto;
 	width: 489px;
