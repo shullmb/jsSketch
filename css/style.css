@@ -39,5 +39,8 @@ body {
 
 .sketched {
 	background: #0f0f0f;
-	
+}
+
+.highlight {
+	border: 1px solid #FFFF99;
 }
