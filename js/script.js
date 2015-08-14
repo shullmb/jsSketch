@@ -1,17 +1,20 @@
 $(document).ready( function(){
-	$('.sqr').hover( function(){
-		$(this).addClass('sketched');
+//Create sketch grid
+	$('#header button[name="grid"]').click( function(){
+		var numDivs= prompt("Please enter a grid between 4 and 64")
+		var grd = '<div class="sqr"></div>';
+		for (i=1; i <= numDivs; i++){
+			$('#container').append(grd);
+		}	
+		//$('#container').append('<div class="sqr"></div>');
+	});
+//Reset button to erase 'sketch'
+	$('#header button[name="reset"]').click( function(){
+		$('.sqr').removeClass('sketched');
+	});
+//Sketch!
+	$(document).on('mouseenter', '.sqr', function() {
+			console.log("hovering");
+			$(this).addClass('sketched'); 
 	});
 });
-/*	$('.sqr').click( function(){
-		$(this).removeClass('sketched');
-	});
-});
-$(document){
-};
-	$(document).on();
-	var numDivs;
-	$('#button').onclick( function() {
-		numDivs =alert( prompt("Grid Size:"));
-});
-*/
