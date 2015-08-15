@@ -9,38 +9,29 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	display: inline;
 	height: 80px;
-	width:1024px;
+	width:100%;
 	margin: auto;
+	text-align: center;
 
-}
-
-#button {
-	height: 40px;
-	width: 120px;
-	clear: both;
-	border: 1px dashed #FFFFFF;
 }
 
 #container {
 	margin: auto;
-	width: 489px;
-	
-}
+	width: 960px;
+	}
 
+#footer {
+	height:80px;
+	width: 100%
+}
 .sqr {
-	height: 120px;
-	width: 120px;
 	background: white;
-	border: solid 1px black;
 	display: block;
 	float: left;
 	overflow:hidden;
+	border-radius: 10%;
 }
 
 .sketched {
 	background: #0f0f0f;
-}
-
-.highlight {
-	border: 1px solid #FFFF99;
 }
